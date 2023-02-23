@@ -4,11 +4,11 @@
  */
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.Genero;
+import ec.edu.uce.modelo.tienda.genero.Genero;
 import ec.edu.uce.modelo.tienda.Plataforma;
-import ec.edu.uce.modelo.Prestamo;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.items.Prestamo;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.Videojuego;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;

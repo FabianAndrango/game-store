@@ -1,23 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ec.edu.uce.modelo.exceptions;
 
-/**
- *
- * @author SAHID
- */
+import lombok.Getter;
+
+@Getter
 public class DuplicadoException extends Exception {
-    private Object obj;
 
-    public DuplicadoException(String msg,Object obj) {
+    private final Object object;
+
+    public DuplicadoException(String msg, Object object) {
         super(msg);
-        this.obj = obj;
+        this.object = object;
     }
 
-    public Object getObj() {
-        return obj;
-    }
-    
 }

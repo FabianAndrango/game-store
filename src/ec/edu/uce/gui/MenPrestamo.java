@@ -4,7 +4,7 @@
  */
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Prestamo;
+import ec.edu.uce.modelo.items.Prestamo;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

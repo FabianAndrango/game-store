@@ -27,8 +27,8 @@ public class Validaciones {
         if (Decimal == null){
             return false;
         }
-        Matcher m = patron.matcher(Decimal);
-        return m.matches();
+        Matcher matcher = patron.matcher(Decimal);
+        return matcher.matches();
     }
     
     public boolean validarEmail(String email){

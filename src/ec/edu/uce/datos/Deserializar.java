@@ -4,17 +4,17 @@
  */
 package ec.edu.uce.datos;
 
-import ec.edu.uce.modelo.Consola;
+import ec.edu.uce.modelo.tienda.Consola;
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Genero;
-import ec.edu.uce.modelo.ItemPrestamo;
-import ec.edu.uce.modelo.Pc;
+import ec.edu.uce.modelo.tienda.genero.Genero;
+import ec.edu.uce.modelo.items.ItemPrestamo;
+import ec.edu.uce.modelo.tienda.Pc;
 import ec.edu.uce.modelo.tienda.Plataforma;
-import ec.edu.uce.modelo.Prestamo;
-import ec.edu.uce.modelo.Propietario;
-import ec.edu.uce.modelo.Requerimiento;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.items.Prestamo;
+import ec.edu.uce.modelo.usuario.Propietario;
+import ec.edu.uce.modelo.tienda.Requerimiento;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.Videojuego;
 import ec.edu.uce.gui.GestionarGenero;
 import ec.edu.uce.gui.GestionarPlataforma;
 import ec.edu.uce.gui.GestionarPrestamo;

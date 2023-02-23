@@ -4,7 +4,7 @@
  */
 package ec.edu.uce.datos;
 
-import ec.edu.uce.modelo.Usuario;
+import ec.edu.uce.modelo.usuario.Usuario;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;

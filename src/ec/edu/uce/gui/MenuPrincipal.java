@@ -1,9 +1,9 @@
 package ec.edu.uce.gui;
 
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Prestamo;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.items.Prestamo;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.Videojuego;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 //import java.io.IOException;

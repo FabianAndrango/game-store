@@ -1,13 +1,13 @@
 ///Importación de las excepciones,la clase Scanner, el dominio y el menu principal
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Consola;
+import ec.edu.uce.modelo.tienda.Consola;
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Pc;
+import ec.edu.uce.modelo.tienda.Pc;
 import ec.edu.uce.modelo.tienda.Plataforma;
-import ec.edu.uce.modelo.Requerimiento;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.tienda.Requerimiento;
+import ec.edu.uce.modelo.tienda.Videojuego;
 import ec.edu.uce.util.Validaciones;
 import static ec.edu.uce.util.Validaciones.esNumero;
 import java.io.Serializable;

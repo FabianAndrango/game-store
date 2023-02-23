@@ -4,7 +4,7 @@
  */
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.tienda.Videojuego;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

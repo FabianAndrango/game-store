@@ -4,8 +4,8 @@
  */
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Genero;
-import ec.edu.uce.util.Categoria;
+import ec.edu.uce.modelo.tienda.genero.Genero;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.Vector;

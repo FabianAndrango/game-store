@@ -4,8 +4,8 @@
  */
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.util.GeneroHumano;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
 import java.io.*;
 import java.io.FileWriter;
 import java.util.Vector;

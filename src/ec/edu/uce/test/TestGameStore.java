@@ -3,11 +3,11 @@ package ec.edu.uce.test;
 import ec.edu.uce.modelo.exceptions.DuplicadoException;
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Genero;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.modelo.Videojuego;
-import ec.edu.uce.util.GeneroHumano;
-import ec.edu.uce.util.Categoria;
+import ec.edu.uce.modelo.tienda.genero.Genero;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.Videojuego;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

@@ -1,8 +1,8 @@
 package ec.edu.uce.test;
 
 
-import ec.edu.uce.modelo.Genero;
-import ec.edu.uce.util.Categoria;
+import ec.edu.uce.modelo.tienda.genero.Genero;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
 
 
 public class TestGenero {

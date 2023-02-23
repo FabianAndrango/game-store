@@ -12,10 +12,10 @@ package ec.edu.uce.gui;
 import ec.edu.uce.modelo.exceptions.DuplicadoException;
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Genero;
+import ec.edu.uce.modelo.tienda.genero.Genero;
 import java.util.Scanner;
 
-import ec.edu.uce.util.Categoria;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
 import ec.edu.uce.util.Validaciones;
 import static ec.edu.uce.util.Validaciones.esNumero;
 import java.io.Serializable;
@@ -172,7 +172,7 @@ public class GestionarGenero implements Serializable {
                 gast.validarGenero(g);
                 gast.nuevoGenero(clave, autor, cat);
             } catch (DuplicadoException ex) {
-                System.out.println(ex.getMessage() + " " + ex.getObj());
+                System.out.println(ex.getMessage() + " " + ex.getObject());
             }
 
         } catch (InputMismatchException ie) {

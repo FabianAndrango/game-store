@@ -1,8 +1,8 @@
 
 package ec.edu.uce.test;
 import ec.edu.uce.modelo.exceptions.ElementoException;
-import ec.edu.uce.modelo.Requerimiento;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.tienda.Requerimiento;
+import ec.edu.uce.modelo.tienda.Videojuego;
 
 public class TestVideojuego {
 

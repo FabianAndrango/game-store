@@ -4,8 +4,8 @@
 
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.Consola;
-import ec.edu.uce.modelo.Requerimiento;
+import ec.edu.uce.modelo.tienda.Consola;
+import ec.edu.uce.modelo.tienda.Requerimiento;
 
 /**
  *

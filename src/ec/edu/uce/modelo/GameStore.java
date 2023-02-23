@@ -8,8 +8,12 @@ import ec.edu.uce.datos.DeserializarUsuario;
 import ec.edu.uce.datos.SerializarUsuario;
 import ec.edu.uce.modelo.exceptions.DuplicadoException;
 import ec.edu.uce.modelo.exceptions.ElementoException;
-import ec.edu.uce.util.Categoria;
-import ec.edu.uce.util.GeneroHumano;
+import ec.edu.uce.modelo.interfaces.IAdministrarCRUD;
+import ec.edu.uce.modelo.tienda.Videojuego;
+import ec.edu.uce.modelo.tienda.genero.Genero;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
 import java.io.Serializable;
 
 public class GameStore implements IAdministrarCRUD, Serializable {

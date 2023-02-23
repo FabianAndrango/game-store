@@ -10,8 +10,8 @@ import ec.edu.uce.modelo.GameStore;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import ec.edu.uce.modelo.Videojuego;
-import static ec.edu.uce.modelo.Videojuego.IDIOMA;
+import ec.edu.uce.modelo.tienda.Videojuego;
+import static ec.edu.uce.modelo.tienda.Videojuego.IDIOMA;
 import static ec.edu.uce.util.Validaciones.esNumero;
 import java.io.Serializable;
 
@@ -119,7 +119,7 @@ public class GestionarVideojuego implements Serializable{
                 gast.validarVideojuego(v);
                 gast.nuevoVideojuego(titulo, desarrollador, redactor, idioma, codigo, precio);
             } catch (DuplicadoException ex) {
-                System.out.println(ex.getMessage() + " " + ex.getObj());
+                System.out.println(ex.getMessage() + " " + ex.getObject());
 
             }
 

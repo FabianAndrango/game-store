@@ -2,9 +2,9 @@
 
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.Prestamo;
-import ec.edu.uce.modelo.Propietario;
-import ec.edu.uce.util.GeneroHumano;
+import ec.edu.uce.modelo.items.Prestamo;
+import ec.edu.uce.modelo.usuario.Propietario;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
 
 public class TestPropietario {
     public static void main(String[] args){

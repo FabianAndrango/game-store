@@ -1,7 +1,7 @@
 package ec.edu.uce.test;
 
 
-import ec.edu.uce.modelo.Pc;
+import ec.edu.uce.modelo.tienda.Pc;
 
 
 

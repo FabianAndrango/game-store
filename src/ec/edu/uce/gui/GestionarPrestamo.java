@@ -3,13 +3,13 @@ package ec.edu.uce.gui;
 /*Importamos las excepciones,validaciones , la clase gameStore, propietario, scanner, Formato fecha, calendario*/
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
-import ec.edu.uce.modelo.Prestamo;
+import ec.edu.uce.modelo.items.Prestamo;
 import ec.edu.uce.util.Validaciones;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.modelo.Videojuego;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.tienda.Videojuego;
 import static ec.edu.uce.util.Validaciones.esNumero;
 import java.io.Serializable;
 import java.time.LocalDate;

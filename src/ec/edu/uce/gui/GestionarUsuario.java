@@ -4,8 +4,8 @@ import ec.edu.uce.modelo.exceptions.DuplicadoException;
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import java.util.InputMismatchException;
-import ec.edu.uce.modelo.Usuario;
-import ec.edu.uce.util.GeneroHumano;
+import ec.edu.uce.modelo.usuario.Usuario;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
 import java.util.Scanner;
 import ec.edu.uce.util.Validaciones;
 import static ec.edu.uce.util.Validaciones.esNumero;
@@ -128,7 +128,7 @@ public class GestionarUsuario implements Serializable{
                 gast.validarUsuario(u);
                 gast.nuevoUsuario(nombre, apellido, contrasenia, genero);
             } catch (DuplicadoException ex) {
-                System.out.println(ex.getMessage() + " " + ex.getObj());
+                System.out.println(ex.getMessage() + " " + ex.getObject());
             }
 
         } catch (InputMismatchException e) {

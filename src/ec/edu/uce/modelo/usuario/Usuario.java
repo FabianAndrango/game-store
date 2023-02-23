@@ -1,19 +1,32 @@
-package ec.edu.uce.modelo;
+package ec.edu.uce.modelo.usuario;
 
+import ec.edu.uce.modelo.items.Prestamo;
 import ec.edu.uce.modelo.exceptions.ElementoException;
-import ec.edu.uce.util.GeneroHumano;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
+@Getter
+@Setter
+@ToString
 public class Usuario  {
-//implements Serializable
-    String nombre;
-    String apellido;
-    int contrasenia;
+
+    private static int contador;
+
+    private int id;
+
+    private int cedula;
+    private String nombre;
+    private String apellido;
+    private GeneroHumano genero;
+
+    private String clave;
+
     private static Prestamo[] prestamos;
     private static int numPrestamos;
-    public static int contador;
-    GeneroHumano genero;
 
     static {
         prestamos = new Prestamo[3];
@@ -21,74 +34,18 @@ public class Usuario  {
         contador = 0;
     }
 
-    /*Creamos el metodo constrcutor por defecto*/
     public Usuario() {
-//        this("Pedro Pablo", "Leon Jaramillo", 1456, GeneroHumano.MASCULINO);
-//        this.contrasenia = contador++;
-////        nombre = "Pedro Pablo";
-////        apellido = "Leon Jaramillo";
-////        contrasenia = 1456;
-////        prestamos = new Prestamo[3];
-////        numPrestamos = 0;
+        this(0, "Sahid", "Carrion", GeneroHumano.MASCULINO, "1234");
     }
 
     /*Creamos el metodo constructor con argumentos*/
-    public Usuario(String nombre, String apellido, int contrasenia, GeneroHumano genero) {
-        this.contrasenia = contador++;
+
+    public Usuario(int cedula, String nombre, String apellido, GeneroHumano genero, String clave) {
+        this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.contrasenia = contrasenia;
         this.genero = genero;
-//        this.prestamos = new Prestamo[3];
-    }
-
-    public Usuario(Usuario u) {
-        this(u.nombre, u.apellido, u.contrasenia, u.genero);
-        this.contrasenia = contador++;
-//        this.nombre = u.nombre;
-//        this.apellido = u.apellido;
-//        this.contrasenia = u.contrasenia;
-    }
-
-    public GeneroHumano getGenero() {
-        return genero;
-    }
-
-    public void setGenero(GeneroHumano genero) {
-        this.genero = genero;
-    }
-
-    /* Creamos los metodos get y set*/
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public int getContraseña() {
-        return contrasenia;
-    }
-
-    public void setContraseña(int contrasenia) {
-        this.contrasenia = contrasenia;
-    }
-
-    public Prestamo getPrestamos(int posicion) {
-        return prestamos[posicion];
-    }
-
-    public void setPrestamos(Prestamo[] prestamos) {
-        this.prestamos = prestamos;
+        this.clave = clave;
     }
 
     /**
@@ -192,18 +149,6 @@ public class Usuario  {
 
     }
 
-    public boolean equals(Object o) {
-        boolean resp = false;
-        Usuario u = null;
-        if (o != null && o instanceof Usuario) {
-            u = (Usuario) o;
-            if (nombre.equals(u.nombre) && apellido.equals(u.apellido)) {
-                resp = true;
-            }
-        }
-        return resp;
-    }
-
     public double calcularTotal() {
         double total = 0;
         for (Prestamo prestamo : prestamos) {
@@ -214,10 +159,15 @@ public class Usuario  {
         return total;
     }
 
-    /*Creamos el metodo ToString*/
     @Override
-    public String toString() {
-        return "Usuario{" + "nombre=" + nombre + ", apellido=" + apellido + ", contrasenia=" + contrasenia + ", genero=" + genero + '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Usuario usuario)) return false;
+        return getId() == usuario.getId() && getCedula() == usuario.getCedula();
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getCedula());
+    }
 }

@@ -6,10 +6,10 @@ package ec.edu.uce.gui;
 
 
 import ec.edu.uce.modelo.GameStore;
-import static ec.edu.uce.modelo.Videojuego.IDIOMA;
+import static ec.edu.uce.modelo.tienda.Videojuego.IDIOMA;
 
-import ec.edu.uce.util.Categoria;
-import ec.edu.uce.util.GeneroHumano;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
+import ec.edu.uce.modelo.usuario.GeneroHumano;
 import java.sql.SQLException;
 
 /**

@@ -1,5 +1,5 @@
 
-package ec.edu.uce.util;
+package ec.edu.uce.modelo.usuario;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
