@@ -4,6 +4,6 @@ import ec.edu.uce.modelo.usuario.Usuario;
 
 public interface UsuarioService {
 
-    Usuario obtenerPorCedulaClave(String cedula, String clave);
+    Usuario obtenerPorCedulaClave(int cedula, String clave);
 
 }

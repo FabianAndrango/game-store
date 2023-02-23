@@ -13,7 +13,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     @Override
-    public Usuario obtenerPorCedulaClave(String cedula, String clave) {
+    public Usuario obtenerPorCedulaClave(int cedula, String clave) {
 
         Usuario usuario = usuarioRepositorio.obtenerPorCedula(cedula);
 

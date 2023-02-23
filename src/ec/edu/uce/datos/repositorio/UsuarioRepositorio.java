@@ -4,6 +4,6 @@ import ec.edu.uce.modelo.usuario.Usuario;
 
 public interface UsuarioRepositorio extends Repositorio<Usuario> {
 
-    Usuario obtenerPorCedula(String cedula);
+    Usuario obtenerPorCedula(int cedula);
 
 }
