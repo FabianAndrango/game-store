@@ -10,10 +10,10 @@ import ec.edu.uce.modelo.exceptions.DuplicadoException;
 import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.interfaces.IAdministrarCRUD;
 import ec.edu.uce.modelo.tienda.Videojuego;
+import ec.edu.uce.modelo.tienda.categoria.Categoria;
 import ec.edu.uce.modelo.tienda.genero.Genero;
 import ec.edu.uce.modelo.usuario.Usuario;
-import ec.edu.uce.modelo.tienda.categoria.Categoria;
-import ec.edu.uce.modelo.usuario.GeneroHumano;
+
 import java.io.Serializable;
 
 public class GameStore implements IAdministrarCRUD, Serializable {
@@ -382,116 +382,7 @@ public class GameStore implements IAdministrarCRUD, Serializable {
         cont1--;
 
     }
-
-    /**
-     * Este metodo se encarga en agregar un videojuego
-     *
-     * @author Sahid
-     * @param Nombre
-     * @param Apellido
-     * @param Contrasenia
-     */
-    public void nuevoUsuario(String nombre, String apellido, int contrasenia, GeneroHumano genero) {
-        if (numUsuarios >= usuarios.length) {
-            Usuario auxUsuario[] = usuarios;
-            usuarios = new Usuario[numUsuarios + 1];
-            System.arraycopy(auxUsuario, 0, usuarios, 0, auxUsuario.length);
-        }
-
-        usuarios[numUsuarios] = new Usuario(nombre, apellido, contrasenia, genero);
-        
-        numUsuarios++;
-        cont++;
-
-    }
-
-    public void nuevoUsuario(Usuario u) {
-        if (numUsuarios >= usuarios.length) {
-            Usuario auxUsuario[] = usuarios;
-            usuarios = new Usuario[numUsuarios + 1];
-            System.arraycopy(auxUsuario, 0, usuarios, 0, auxUsuario.length);
-        }
-
-        usuarios[numUsuarios] = new Usuario(u);
-        
-        numUsuarios++;
-        cont++;
-
-    }
-
-    /**
-     * Este metodo se encarga de listar
-     *
-     * @return lista que muestra la lista del Videojuego
-     */
-    public String listarUsuario() {
-        String lista = "";
-        for (Usuario usuario : usuarios) {
-            if (usuarios != null) {
-                lista += usuario + "\r\n";
-            }
-        }
-        return lista;
-    }
-
-    /**
-     * Este metodo se encarga de buscar
-     *
-     * @param posicion
-     * @return lista que muestra la busqueda del Usuario
-     */
-    public Usuario buscarUsuario(int posicion) throws ElementoException {
-        if (posicion < usuarios.length) {
-            return usuarios[posicion];
-        } else {
-            throw new ElementoException("Usuario fuera de rango ", posicion);
-        }
-    }
-
-    /**
-     * Este metodo se encarga de editar
-     *
-     * @param posicion
-     * @param Nombre
-     * @param Apellido
-     * @param Contrasenia
-     */
-    public void editarUsuario(int posicion, String nombre, String apellido, int contrasenia, GeneroHumano genero) throws ElementoException {
-        if (posicion < usuarios.length) {
-            usuarios[posicion] = new Usuario(nombre, apellido, contrasenia, genero);
-        } else {
-            throw new ElementoException("Usuario fuera de rango ", posicion);
-        }
-    }
     
-     public void editarUsuario(int posicion, Usuario usuario)throws ElementoException{
-        if (posicion < usuarios.length) {
-        usuarios[posicion] = usuario;
-        } else {
-            throw new ElementoException("Usuario fuera de rango ", posicion);
-        }
-    }
-
-    /**
-     * Este metodo se encarga de eliminar
-     *
-     * @param posicion
-     */
-    public void borrarUsuario(int posicion) throws ElementoException {
-        Usuario[] aux;
-        int j = usuarios.length - 1;
-        aux = new Usuario[j];
-        if (posicion <= numUsuarios) {
-            System.arraycopy(usuarios, 0, aux, 0, posicion);
-            System.arraycopy(usuarios, posicion + 1, aux, posicion, j - (posicion));
-        } else {
-            throw new ElementoException("Usuario fuera de rango", posicion);
-        }
-        usuarios = aux;
-        numUsuarios--;
-        cont--;
-
-    }
 
     public boolean equals(Object o) {
         boolean resp = false;
