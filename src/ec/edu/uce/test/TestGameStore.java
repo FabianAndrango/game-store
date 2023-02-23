@@ -1,7 +1,7 @@
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.DuplicadoException;
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.DuplicadoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import ec.edu.uce.modelo.Genero;
 import ec.edu.uce.modelo.Usuario;

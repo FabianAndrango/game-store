@@ -1,7 +1,7 @@
 package ec.edu.uce.gui;
 
 /*Importamos las excepciones,validaciones , la clase gameStore, propietario, scanner, Formato fecha, calendario*/
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import ec.edu.uce.modelo.Prestamo;
 import ec.edu.uce.util.Validaciones;

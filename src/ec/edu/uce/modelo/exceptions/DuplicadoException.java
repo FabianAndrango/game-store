@@ -2,21 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package ec.edu.uce.modelo;
+package ec.edu.uce.modelo.exceptions;
 
 /**
  *
  * @author SAHID
  */
-public class ElementoException extends Exception {
-    int posicion;
+public class DuplicadoException extends Exception {
+    private Object obj;
 
-      public ElementoException( String msg,int posicion) {
+    public DuplicadoException(String msg,Object obj) {
         super(msg);
-        this.posicion = posicion;
+        this.obj = obj;
     }
 
-    public int getPosicion() {
-        return posicion;
+    public Object getObj() {
+        return obj;
     }
+    
 }

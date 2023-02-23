@@ -1,5 +1,6 @@
 package ec.edu.uce.modelo;
 
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.util.GeneroHumano;
 
 import java.time.LocalDate;
@@ -160,7 +161,7 @@ public class Usuario  {
      * @param vigencia
      * @param cantidad
      * @param total
-     * @throws ec.edu.uce.modelo.ElementoException
+     * @throws ElementoException
      */
     public void editarPrestamo(int posicion, LocalDate fecha, LocalDate vigencia, int cantidad, double total) throws ElementoException {
         if (posicion < prestamos.length) {
@@ -174,7 +175,7 @@ public class Usuario  {
      * Este metodo se encarga de eliminar
      *
      * @param posicion
-     * @throws ec.edu.uce.modelo.ElementoException
+     * @throws ElementoException
      */
     public void borrarPrestamo(int posicion) throws ElementoException {
         Prestamo[] aux;

@@ -1,7 +1,7 @@
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.DuplicadoException;
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.DuplicadoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import java.util.InputMismatchException;
 import ec.edu.uce.modelo.Usuario;

@@ -1,6 +1,6 @@
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.Usuario;
 import java.time.LocalDate;
 import java.util.Date;

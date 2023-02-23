@@ -1,6 +1,6 @@
 
 package ec.edu.uce.test;
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.Requerimiento;
 import ec.edu.uce.modelo.Videojuego;
 

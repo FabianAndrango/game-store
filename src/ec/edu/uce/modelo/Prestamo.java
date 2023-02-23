@@ -1,5 +1,7 @@
 package ec.edu.uce.modelo;
 
+import ec.edu.uce.modelo.exceptions.ElementoException;
+
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;

@@ -6,6 +6,8 @@ package ec.edu.uce.modelo;
 
 import ec.edu.uce.datos.DeserializarUsuario;
 import ec.edu.uce.datos.SerializarUsuario;
+import ec.edu.uce.modelo.exceptions.DuplicadoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.util.Categoria;
 import ec.edu.uce.util.GeneroHumano;
 import java.io.Serializable;

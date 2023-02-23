@@ -4,7 +4,7 @@
  */
 package ec.edu.uce.gui;
 
-import ec.edu.uce.modelo.Plataforma;
+import ec.edu.uce.modelo.tienda.Plataforma;
 import ec.edu.uce.modelo.Requerimiento;
 
 import java.io.BufferedWriter;

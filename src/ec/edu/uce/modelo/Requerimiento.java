@@ -4,84 +4,51 @@
  */
 package ec.edu.uce.modelo;
 
+import ec.edu.uce.modelo.exceptions.SetterException;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.io.Serializable;
 
-/*se crea la clase Requerimiento y los atributos de la misma */
+@Getter
+@Setter
+@ToString
 public class Requerimiento implements Serializable {
+
+    private static int contador;
+
+    private int id;
 
     private int espacioNecesario;
     private int memoriaRam;
     private String procesador;
     private String tarjetaGrafica;
 
-    /*se crea el metodo constructor sin parametros y se inicializa los atributos*/
     public Requerimiento() {
-        espacioNecesario = 500;
-        memoriaRam = 16;
-        procesador = "Intel Core i7";
-        tarjetaGrafica = "Intel HD 4000";
+        this(500, 16, "Intel Core i7", "Intel HD 4000");
+
     }
-    /*Se define el metodo constructor Requerimiento con parametros y se inicializa los atributos*/
-   
-    /*Se crea el metodo constructor con referencias*/
+
     public Requerimiento(int espacioNecesario, int memoriaRam, String procesador, String tarjetaGrafica) {
+        this.id = ++contador;
         this.espacioNecesario = espacioNecesario;
         this.memoriaRam = memoriaRam;
         this.procesador = procesador;
         this.tarjetaGrafica = tarjetaGrafica;
     }
-    
-    
-     public Requerimiento(Requerimiento r) {
-       this.espacioNecesario = r.espacioNecesario;
-        this.memoriaRam = r.memoriaRam;
-        this.procesador = r.procesador;
-        this.tarjetaGrafica = r.tarjetaGrafica;
-    }
 
-    /*Se establece los metodos get/set de los atributos de la clase Requerimiento*/
-    public int getEspacioNecesario() {
-        return espacioNecesario;
-    }
-
-    public void setEspacioNecesario(int newespacioNecesario) {
-        if (newespacioNecesario > 0) {
-            espacioNecesario = newespacioNecesario;
+    public void setEspacioNecesario(int espacioNecesario) {
+        if (espacioNecesario < 0) {
+            throw new SetterException("El espacio necesario no puede ser negativo")
         }
+        this.espacioNecesario = espacioNecesario;
     }
 
-    public int getMemoriaRam() {
-        return memoriaRam;
-    }
-
-    public void setMemoriaRam(int newmemoriaRam) {
-        if (newmemoriaRam > 0) {
-            memoriaRam = newmemoriaRam;
+    public void setMemoriaRam(int memoriaRam) {
+        if (memoriaRam < 0) {
+            throw new SetterException("La memoria ram no puede ser negativa")
         }
+        this.memoriaRam = memoriaRam;
     }
-
-    public String getProcesador() {
-        return procesador;
-    }
-
-    public void setProcesador(String newprocesador) {
-        procesador = newprocesador;
-    }
-
-    public String getTarjetaGrafica() {
-        return tarjetaGrafica;
-    }
-
-    public void setTarjetaGrafica(String newtarjetaGrafica) {
-        tarjetaGrafica = newtarjetaGrafica;
-    }
-    
-  
-    /*Se define el metodo toString de la clase requerimiento*/
-
-    @Override
-    public String toString() {
-        return "Requerimiento{" + "espacioNecesario=" + espacioNecesario + ", memoriaRam=" + memoriaRam + ", procesador=" + procesador + ", tarjetaGrafica=" + tarjetaGrafica + '}';
-    }
-
 }

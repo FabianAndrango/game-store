@@ -4,6 +4,9 @@
  */
 package ec.edu.uce.modelo;
 
+import ec.edu.uce.modelo.exceptions.ElementoException;
+import ec.edu.uce.modelo.tienda.Plataforma;
+
 import java.io.Serializable;
 
 public class Videojuego implements Serializable  {

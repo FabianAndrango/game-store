@@ -9,7 +9,7 @@ import ec.edu.uce.modelo.GameStore;
 import ec.edu.uce.modelo.Genero;
 import ec.edu.uce.modelo.ItemPrestamo;
 import ec.edu.uce.modelo.Pc;
-import ec.edu.uce.modelo.Plataforma;
+import ec.edu.uce.modelo.tienda.Plataforma;
 import ec.edu.uce.modelo.Prestamo;
 import ec.edu.uce.modelo.Propietario;
 import ec.edu.uce.modelo.Requerimiento;

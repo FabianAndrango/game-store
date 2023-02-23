@@ -5,7 +5,7 @@
 package ec.edu.uce.gui;
 
 import ec.edu.uce.modelo.Genero;
-import ec.edu.uce.modelo.Plataforma;
+import ec.edu.uce.modelo.tienda.Plataforma;
 import ec.edu.uce.modelo.Prestamo;
 import ec.edu.uce.modelo.Usuario;
 import ec.edu.uce.modelo.Videojuego;

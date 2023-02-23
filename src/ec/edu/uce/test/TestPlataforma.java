@@ -1,6 +1,6 @@
 package ec.edu.uce.test;
 
-import ec.edu.uce.modelo.Plataforma;
+import ec.edu.uce.modelo.tienda.Plataforma;
 
 public class TestPlataforma {
 

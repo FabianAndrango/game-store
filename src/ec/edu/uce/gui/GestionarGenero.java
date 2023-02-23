@@ -9,8 +9,8 @@ package ec.edu.uce.gui;
  * @author User
  */
 /*Aqui importamos las excepciones,la clase Scanner, el dominio y el menu principal*/
-import ec.edu.uce.modelo.DuplicadoException;
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.DuplicadoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import ec.edu.uce.modelo.Genero;
 import java.util.Scanner;

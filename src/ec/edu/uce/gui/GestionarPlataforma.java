@@ -2,10 +2,10 @@
 package ec.edu.uce.gui;
 
 import ec.edu.uce.modelo.Consola;
-import ec.edu.uce.modelo.ElementoException;
+import ec.edu.uce.modelo.exceptions.ElementoException;
 import ec.edu.uce.modelo.GameStore;
 import ec.edu.uce.modelo.Pc;
-import ec.edu.uce.modelo.Plataforma;
+import ec.edu.uce.modelo.tienda.Plataforma;
 import ec.edu.uce.modelo.Requerimiento;
 import ec.edu.uce.modelo.Videojuego;
 import ec.edu.uce.util.Validaciones;

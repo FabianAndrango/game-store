@@ -4,6 +4,8 @@
  */
 package ec.edu.uce.modelo;
 
+import ec.edu.uce.modelo.exceptions.ElementoException;
+
 /**
  *
  * @author SAHID

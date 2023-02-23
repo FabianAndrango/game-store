@@ -1,21 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
- */
+
 package ec.edu.uce.util;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public enum Categoria {
-    ACCION("Acci."), AVENTURA("Avent.."), ARCADE("Arc."), DEPORTE("Dep."), ESTRATEGIA("Estrat."), SIMULACION("Simul."), MUSICAL("Musi."), TERROR("Terr."),
-    SHOTTER("Sht."), RPG("RPG.") ;
+    ACCION("Acci."),
+    AVENTURA("Avent.."),
+    ARCADE("Arc."),
+    DEPORTE("Dep."),
+    ESTRATEGIA("Estrat."),
+    SIMULACION("Simul."),
+    MUSICAL("Musi."),
+    TERROR("Terr."),
+    SHOTTER("Sht."),
+    RPG("RPG.") ;
 
-    private Categoria(String abreviatura) {
-        this.abreviatura = abreviatura;
-    }
-
-    public String dameCate() {
-        return abreviatura;
-    }
-    
-    private String abreviatura;
+    private final String abreviatura;
 
 }
